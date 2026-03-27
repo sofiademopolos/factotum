@@ -1,5 +1,13 @@
 body {
   max-width: 800px;
   margin: auto;
-  font-family: "Mozilla Text";
+}
+
+h1, h2, h3 {
+  font-family: "Mozilla Text", "Lucida Console", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Libre Franklin", Helvetica, sans-serif;
 }
