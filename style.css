@@ -9,8 +9,9 @@ body {
 h1 {
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .25em;
+  letter-spacing: .125em;
   font-size: 6em;
+  text-align: center;
 }
 
 h2 {
