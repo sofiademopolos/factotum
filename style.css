@@ -2,3 +2,11 @@ body {
   max-width: 800px;
   margin: auto;
 }
+
+h1, h2, h3 {
+  font-family: "Mozilla Headline";
+}
+
+p {
+  font-family: "Mozilla Text";
+}
