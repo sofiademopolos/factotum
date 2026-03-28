@@ -52,11 +52,11 @@ a:hover {
   margin-right: auto;
   width: 75%;
 }
-
+/*
 .hover_img a { 
   position: relative; 
 }
-
+*/
 .hover_img a span { 
   position: absolute; 
   display: none;
