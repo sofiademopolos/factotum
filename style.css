@@ -37,6 +37,11 @@ p {
 a {
   color: black;
   font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
 }
 
 /* Classes ----------------------------------------------------------- */
