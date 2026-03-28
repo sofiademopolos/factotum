@@ -44,14 +44,14 @@ p {
 
 /* Media Queries ----------------------------------------------------------- */
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 680px) {
   h1 {
-    font-size: 3em;
+    font-size: 3.25em;
   }
   h2 {
-    font-size: 1.66em;
+    font-size: 1.75em;
   }
   h3 {
-    font-size: 1.33em;
+    font-size: 1.25em;
   }
 }
