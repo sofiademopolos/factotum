@@ -64,7 +64,6 @@ a:hover {
 }
 .hover_img a:hover span { 
   display: block;
-  width: 300px;
 }
 
 /* Media Queries ----------------------------------------------------------- */
