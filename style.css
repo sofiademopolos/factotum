@@ -30,6 +30,13 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: .75em;
+  text-align: center;
+  color: red;
+}
+
 p {
   font-size: 1em;
 }
@@ -42,6 +49,11 @@ a {
 
 a:hover {
   color: red;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
 }
 
 /* Classes ----------------------------------------------------------- */
@@ -64,6 +76,12 @@ a:hover {
 }
 .hover_img a:hover span { 
   display: block;
+}
+
+/* IDs ----------------------------------------------------------- */
+
+#selected_projects {
+  min-height: 1200px;
 }
 
 /* Media Queries ----------------------------------------------------------- */
