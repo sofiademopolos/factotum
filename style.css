@@ -1,11 +1,11 @@
 /* Elements ----------------------------------------------------------- */
-
 body {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  max-width: 1200px;
   font-family: "Libre Franklin", Helvetica, sans-serif;
   font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -22,12 +22,14 @@ h2 {
   font-weight: 700;
   font-size: 2.66em;
   text-align: center;
+  margin-block-start: .5em;
 }
 
 h3 {
   font-weight: 700;
   font-size: 1.33em;
   text-align: center;
+  margin-block-end: 0;
 }
 
 h4 {
@@ -35,10 +37,22 @@ h4 {
   font-size: .75em;
   text-align: center;
   color: red;
+  margin-block-end: 0;
+}
+
+h5 {
+  font-weight: 400;
+  color: red;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
 }
 
 p {
   font-size: 1em;
+  margin-block-start: .25em;
+  line-height: 135%;
 }
 
 a {
@@ -51,9 +65,15 @@ a:hover {
   color: red;
 }
 
+ul {
+    list-style-type: none;
+}
+
 footer {
-  padding: 20px;
   text-align: center;
+  bottom: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* Classes ----------------------------------------------------------- */
@@ -62,13 +82,16 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 66.7%;
 }
-/*
-.hover_img a { 
-  position: relative; 
+
+.single-column-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-*/
+
 .hover_img a span { 
   position: absolute; 
   display: none;
@@ -76,26 +99,160 @@ footer {
 }
 .hover_img a:hover span { 
   display: block;
+  position: static;
+}
+
+.info {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  gap: 50px;
+}
+
+.block1 {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block2 {
+  flex: 1;
+}
+
+.left {
+  text-align: left;
+}
+
+.date {
+  font-weight: 200;
+  color: grey;
+  padding-left: 10px;
+}
+
+.scroll_container {
+  overflow: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  height: 533px;
+}
+
+.scroll_container img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 503px;
+}
+
+.scroll_container_short {
+  overflow: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  height: 400px;
+}
+
+.scroll_container_short img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 380px;
+}
+
+.header-container {
+  display: block;
+  height: fit-content;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.header-container img {
+  width: 100vw;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.column {
+  flex: 32%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: drop-shadow(3px 3px 3px lightgray);
 }
 
 /* IDs ----------------------------------------------------------- */
 
-#selected_projects {
-  height: 650px;
+#first-line {
+  display: block;
 }
 
 /* Media Queries ----------------------------------------------------------- */
 
 @media screen and (max-width: 680px) {
   h1 {
-    font-size: 3.25em;
+    font-size: 3.5em;
   }
   h2 {
-    font-size: 1.75em;
+    font-size: 2em;
+    margin-block-start: 25px;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.33em;
   }
-  #selected_projects {
-    height: 400px;
+  .center {
+    width: 80%;
+  }
+  .single-column-text {
+    width: 80%;
+  }
+  .column {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  h3 {
+    margin-block-start: 1.5em;
+  }
+
+  .single-column-text {
+    width: 70%;
+  }
+
+  .info {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .block1, .block2 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .row {
+    padding: 5%;
+  }
+
+  .column {
+    flex: 40%;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  #first-line {
+    display: inline;
+  }
 }
